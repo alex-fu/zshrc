@@ -1,0 +1,32 @@
+[user]
+	email = fyfhust@gmail.com
+	name = Fu Yifeng
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	stash = auto
+[alias]
+    lg  = log --graph --decorate --pretty=oneline --abbrev-commit
+    lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+    lg3 = !"git lg1"
+    st  = status
+    br  = branch
+    co  = checkout
+    ci  = commit
+    di  = diff
+    merge = merge --no-ff
+    cl  = clone
+    f   = fetch
+    p   = pull
+    cp  = cherry-pick
+
+[push]
+	default = simple
+[core]
+	editor = vim
+[http]
+	postBuffer = 524288000
+[https]
+	postBuffer = 524288000
